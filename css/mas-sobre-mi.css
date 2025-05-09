@@ -1,0 +1,259 @@
+/* Estilos base - Toolbar */
+.toolbar {
+    background-color: #333333;
+    width: 100%;
+    padding: 12px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.toolbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar nav ul li a {
+    color: #66cc99;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.toolbar nav ul li a:hover {
+    color: #ffffff;
+}
+
+.icono-casa {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Estilos generales del body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #66cc99;
+    background-image: url('../img/pngtree-circuit-technology-background-blue-electronics-line-vector-png-image_10436663.png');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333333;
+    line-height: 1.7;
+}
+
+/* Contenido principal */
+main {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
+.nombre {
+    font-size: 3.2em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    line-height: 1.3;
+}
+
+.contenido-principal {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.descripcion {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Contenedor de videos */
+.contenedor-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.video-container {
+    flex: 1 1 500px;
+    min-width: 300px;
+    text-align: center;
+}
+
+
+/* Estilos para el video local */
+.video-personal {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    background: #000;
+    aspect-ratio: 16/9;
+}
+
+.titulo-video {
+    color: #66cc99;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+contenedor-dafo {
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    background: rgba(51, 51, 51, 0.3);
+    border-radius: 12px;
+    max-width: 600px;
+}
+
+.titulo-dafo {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.descripcion-dafo {
+    color: #ffffff;
+    font-size: 1em;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Botón de descarga DAFO */
+.boton-dafo {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #333333;
+    color: #66cc99;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 2px solid #66cc99;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.1em;
+}
+
+.boton-dafo:hover {
+    background-color: #66cc99;
+    color: #333333;
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #333333;
+    color: #66cc99;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    font-size: 0.95em;
+    margin-top: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .toolbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .toolbar nav ul li a {
+        font-size: 1.2em;
+    }
+    
+    main {
+        margin-top: 120px;
+        margin-bottom: 40px;
+    }
+    
+    .nombre {
+        font-size: 2.5em;
+    }
+    
+    .contenido-principal {
+        max-width: 90%;
+        padding: 25px;
+    }
+    
+    .video-container {
+        flex: 1 1 100%;
+    }
+    
+    .drive-video {
+        height: 300px;
+    }
+    
+    .titulo-video {
+        font-size: 1.3em;
+    }
+
+    contenedor-dafo {
+        margin: 30px auto;
+        padding: 15px;
+    }
+    
+    .titulo-dafo {
+        font-size: 1.3em;
+    }
+    
+    .boton-dafo {
+        padding: 10px 25px;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contenido-principal {
+        max-width: 85%;
+    }
+    
+    .contenedor-videos {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contenido-principal {
+        max-width: 950px;
+    }
+    
+    .video-personal {
+        transition: transform 0.3s ease;
+    }
+    
+    .video-personal:hover {
+        transform: scale(1.02);
+    }
+    
+    .drive-video:hover {
+        box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    .boton-dafo {
+        padding: 15px 35px;
+        font-size: 1.2em;
+    }
+}
