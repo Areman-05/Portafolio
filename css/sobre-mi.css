@@ -97,34 +97,115 @@ main {
 
 .footer {
     width: 100%;
-    background-color: #333333; 
+    background-color: #333333;
     color: #66cc99;
     text-align: center;
-    padding: 10px 0; 
+    padding: 15px 0;
     position: relative;
-    font-size: 0.9em; 
+    font-size: 0.9em;
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {
-    .nombre {
-        font-size: 2.2em;
+    .toolbar {
+        padding: 8px;
+        justify-content: flex-start;
     }
-    .descripcion {
-        max-width: 90%;
-        padding: 20px;
-        font-size: 1em;
+    
+    .toolbar nav ul {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
     }
-    .subtitulo {
+    
+    .toolbar nav ul li a {
         font-size: 1.2em;
     }
+    
+    .icono-casa {
+        width: 22px;
+        height: 22px;
+    }
+    
+    main {
+        margin-top: 130px;
+        margin-bottom: 30px;
+    }
+    
+    .nombre {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+    
+    .descripcion {
+        max-width: 92%;
+        padding: 18px;
+        font-size: 0.95em;
+        line-height: 1.7;
+    }
+    
+    .subtitulo {
+        font-size: 1.15em;
+        margin: 18px 0 8px 0;
+    }
+    
     .imagen-sobre-mi {
-        width: 95%;
-        max-height: 300px;
+        width: 100%;
+        max-height: 280px;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+    
+    .footer {
+        padding: 12px 0;
+        font-size: 0.85em;
     }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+    .toolbar nav ul {
+        gap: 20px;
+    }
+    
+    .toolbar nav ul li a {
+        font-size: 1.3em;
+    }
+    
+    .icono-casa {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .nombre {
+        font-size: 2.5em;
+    }
+    
     .descripcion {
         max-width: 85%;
+        padding: 25px;
+    }
+    
+    .imagen-sobre-mi {
+        width: 85%;
+        max-height: 350px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .toolbar nav ul {
+        gap: 30px;
+    }
+    
+    .toolbar nav ul li a {
+        font-size: 1.5em;
+    }
+    
+    .descripcion {
+        max-width: 750px;
+    }
+    
+    .imagen-sobre-mi {
+        width: 80%;
+        max-height: 450px;
     }
 }
