@@ -1,0 +1,264 @@
+.toolbar {
+    background-color: #333333; 
+    width: 100%;
+    padding: 12px; 
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.toolbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; 
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar nav ul li a {
+    color: #66cc99; 
+    text-decoration: none;
+    font-size: 1.5em; 
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.toolbar nav ul li a:hover {
+    color: #ffffff; 
+}
+
+.icono-casa {
+    width: 28px; 
+    height: 28px;
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #66cc99; 
+    background-image: url('../img/pngtree-circuit-technology-background-blue-electronics-line-vector-png-image_10436663.png'); 
+    background-blend-mode: multiply; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    color: #333333; 
+}
+
+main {
+    text-align: center;
+    margin-top: 150px; 
+}
+
+.nombre {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+.descripcion {
+    font-size: 1em;
+    color: #ffffff; 
+    margin: 20px auto; 
+    max-width: 100%; 
+    line-height: 1.8; 
+    text-align: justify; 
+    font-weight: 300; 
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+    white-space: pre-line; 
+}
+
+.imagenes-habilidades, .imagenes-herramientas {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    margin: 20px 0; 
+    flex-wrap: nowrap; 
+}
+
+.imagenes-habilidades img, .imagenes-herramientas img {
+    width: 64px; 
+    height: 64px; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); 
+}
+
+.descripcion .estudio {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #ffffff; 
+    margin-top: 20px;
+    display: block;
+}
+
+.footer {
+    width: 100%;
+    background-color: #333333; 
+    color: #66cc99;
+    text-align: center;
+    padding: 10px 0; 
+    position: relative;
+    font-size: 0.9em; 
+}
+
+@media (max-width: 768px) {
+    .toolbar {
+        padding: 8px;
+        justify-content: flex-start; 
+    }
+
+    .toolbar nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+        align-items: flex-start;
+    }
+
+    .toolbar nav ul li a {
+        font-size: 1.2em; 
+    }
+
+    .icono-casa {
+        width: 20px; 
+        height: 20px; 
+    }
+
+    main {
+        margin-top: 120px; 
+    }
+
+    .nombre {
+        font-size: 2em; 
+    }
+
+    .descripcion {
+        font-size: 0.9em; 
+        max-width: 90%; 
+        padding: 15px; 
+    }
+
+    .estudio {
+        font-size: 1.1em;
+        font-weight: bold; 
+        margin: 10px 0; 
+    }
+
+    .imagenes-habilidades, .imagenes-herramientas {
+        flex-wrap: wrap; 
+        gap: 10px; 
+    }
+
+    .imagenes-habilidades img, .imagenes-herramientas img {
+        width: 48px; 
+        height: 48px;
+    }
+
+    .footer {
+        font-size: 0.8em; 
+        padding: 8px 0; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .toolbar {
+        padding: 10px;
+    }
+
+    .toolbar nav ul {
+        gap: 15px; 
+    }
+
+    .toolbar nav ul li a {
+        font-size: 1.3em; 
+    }
+
+    .icono-casa {
+        width: 24px; 
+        height: 24px; 
+    }
+
+    main {
+        margin-top: 130px; 
+    }
+
+    .nombre {
+        font-size: 2.5em; 
+    }
+
+    .descripcion {
+        font-size: 1em; 
+        max-width: 80%; 
+        padding: 18px; 
+    }
+
+    .estudio {
+        font-size: 1.2em; 
+        font-weight: bold; 
+        margin: 12px 0; 
+    }
+
+    .imagenes-habilidades, .imagenes-herramientas {
+        flex-wrap: wrap; 
+        gap: 12px; 
+    }
+
+    .imagenes-habilidades img, .imagenes-herramientas img {
+        width: 56px; 
+        height: 56px;
+    }
+
+    .footer {
+        font-size: 0.85em; 
+    }
+}
+
+@media (min-width: 1200px) {
+    .toolbar nav ul {
+        gap: 30px; 
+    }
+
+    .toolbar nav ul li a {
+        font-size: 1.6em; 
+    }
+
+    .icono-casa {
+        width: 28px; 
+        height: 28px; 
+    }
+
+    .nombre {
+        font-size: 3em; 
+    }
+
+    .descripcion {
+        font-size: 1.1em; 
+        max-width: 600px; 
+        padding: 20px; 
+    }
+
+    .estudio {
+        font-size: 1.3em; 
+        font-weight: bold; 
+        margin: 15px 0; 
+    }
+
+    .imagenes-habilidades, .imagenes-herramientas {
+        flex-wrap: nowrap; 
+        gap: 15px; 
+    }
+
+    .imagenes-habilidades img, .imagenes-herramientas img {
+        width: 64px; 
+        height: 64px;
+    }
+
+    .footer {
+        font-size: 0.9em; 
+    }
+}
