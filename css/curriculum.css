@@ -1,0 +1,124 @@
+.toolbar {
+    background-color: #333333; 
+    width: 100%;
+    padding: 12px; 
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.toolbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; 
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar nav ul li a {
+    color: #66cc99; 
+    text-decoration: none;
+    font-size: 1.5em; 
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.toolbar nav ul li a:hover {
+    color: #ffffff; 
+}
+
+.icono-casa {
+    width: 28px; 
+    height: 28px;
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #66cc99;
+    background-image: url('../img/pngtree-circuit-technology-background-blue-electronics-line-vector-png-image_10436663.png');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333333;
+}
+
+main {
+    text-align: center;
+    margin-top: 150px; 
+}
+
+.nombre {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    font-size: 1em;
+    color: #ffffff;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.descripcion img {
+    width: 100%;
+    max-height: 700px; 
+    border-radius: 10px;
+    object-fit: contain; /* Para que la imagen no se deforme */
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.boton-descarga {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #333333;
+    color: #66cc99;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.boton-descarga:hover {
+    background-color: #66cc99;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.footer {
+    width: 100%;
+    background-color: #333333; 
+    color: #66cc99;
+    text-align: center;
+    padding: 10px 0; 
+    position: relative;
+    font-size: 0.9em; 
+}
+
+@media (max-width: 768px) {
+    .nombre {
+        font-size: 2em;
+    }
+    .descripcion {
+        max-width: 90%;
+        padding: 15px;
+    }
+    .descripcion img {
+        max-height: 400px;
+    }
+}
