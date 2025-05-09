@@ -1,0 +1,130 @@
+.toolbar {
+    background-color: #333333; 
+    width: 100%;
+    padding: 12px; 
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.toolbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; 
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar nav ul li a {
+    color: #66cc99; 
+    text-decoration: none;
+    font-size: 1.5em; 
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.toolbar nav ul li a:hover {
+    color: #ffffff; 
+}
+
+.icono-casa {
+    width: 28px; 
+    height: 28px;
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #66cc99;
+    background-image: url('../img/pngtree-circuit-technology-background-blue-electronics-line-vector-png-image_10436663.png');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333333;
+}
+
+main {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.nombre {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.descripcion {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.subtitulo {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #66cc99;
+    display: block;
+    margin: 20px 0 10px 0;
+}
+
+.imagen-sobre-mi {
+    width: 80%;
+    max-height: 400px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin: 30px auto;
+    display: block;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(102, 204, 153, 0.3);
+}
+
+.footer {
+    width: 100%;
+    background-color: #333333; 
+    color: #66cc99;
+    text-align: center;
+    padding: 10px 0; 
+    position: relative;
+    font-size: 0.9em; 
+}
+
+@media (max-width: 768px) {
+    .nombre {
+        font-size: 2.2em;
+    }
+    .descripcion {
+        max-width: 90%;
+        padding: 20px;
+        font-size: 1em;
+    }
+    .subtitulo {
+        font-size: 1.2em;
+    }
+    .imagen-sobre-mi {
+        width: 95%;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .descripcion {
+        max-width: 85%;
+    }
+}
